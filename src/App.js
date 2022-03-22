@@ -17,7 +17,7 @@ function App() {
       <Inventory price="120" />
       <Inventory price="150" />
 
-      <Footer favcol="Yellow" />
+      <Footer favcol = "blue"/>
     </div> // jsx javascript xml language and it allows us to use html tags inside a js file 
   );
 }
