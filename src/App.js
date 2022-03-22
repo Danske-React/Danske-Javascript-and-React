@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import MyForm from "./components/form";
 import Header from "./components/header";
 import Inventory from "./components/Inventory";
+import Container from "./components/unmountEx";
 
 function App() {
   return (
@@ -12,12 +13,13 @@ function App() {
       <Header />
       <p>this is the body of our react apps</p>
       <MyForm />
-      <Car />
-      <Inventory price="100" />
+      <Container/>
+      {/* <Car /> */}
+      {/* <Inventory price="100" />
       <Inventory price="120" />
-      <Inventory price="150" />
+      <Inventory price="150" /> */}
 
-      <Footer favcol = "blue"/>
+      {/* <Footer favcol = "blue"/> */}
     </div> // jsx javascript xml language and it allows us to use html tags inside a js file 
   );
 }

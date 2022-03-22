@@ -22,23 +22,25 @@ class Footer extends React.Component {
             <div id="div1"></div>
             <div id="div2"></div>
             {/* <button type="button" onClick={this.changeColor}> Change Color</button> */}
-            </div>
-            
+            </div>    
         )
     }
     componentDidMount() { //4
         setTimeout(() => {
             this.setState({favoriteColor: "yellow"})
         },2000 )
+        return console.log("component did mount is wokring");
     }
 
-    getSnapshotBeforeUpdate(prevProps, prevState) {
+    getSnapshotBeforeUpdate(prevState) {
         document.getElementById("div1").innerHTML = " Before the update the value was " + prevState.favoriteColor;
+        return console.log(prevState.favoriteColor);
     }
 
     componentDidUpdate() {
         document.getElementById("div2").innerHTML = 
      "   the updated value is " + this.state.favoriteColor;
+     return console.log("component did update is wokring");
     }
    
     
