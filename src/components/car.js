@@ -1,15 +1,26 @@
-import React, {Component} from "react";
+import React from "react";
 
 
 class Car extends React.Component {
-    constructor(){
-        super();
-        this.state = {brand: "Ford" , Color: "White", Model :"EcoSport"}
-    }
+    // constructor(){
+    //     super();
+    //     this.state = {brand: "Ford" , Color: "White", Model :"EcoSport"}
+    // }
     render() {
-        return <h2>I own a {this.state.brand} {this.state.Model} which is {this.state.color} in color</h2>
+        return <h2>Hello this is a {this.props.type}car</h2>
     }
 
 }
 
-export default Car
+class Garage extends React.Component{
+    render() {
+        return(
+            <div>
+                <h1>who lives in a garage</h1>
+                <Car type="SUV"/>
+            </div>
+        )
+    }
+}
+
+export default Garage
