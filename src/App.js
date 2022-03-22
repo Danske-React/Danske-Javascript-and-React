@@ -1,6 +1,6 @@
 
 import React from "react";
-import Garage from "./components/car";
+import Car from "./components/car";
 import Footer from "./components/footer";
 import MyForm from "./components/form";
 import Header from "./components/header";
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <p>this is the body of our react apps</p>
       <MyForm />
-      <Garage />
+      <Car />
       <Inventory price="100" />
       <Inventory price="120" />
       <Inventory price="150" />
