@@ -1,9 +1,49 @@
 {
-    "users" : [
-        {
-            "name": "Peter",
-            "age": 45,
-            "id": 1
-        }
-    ]
+  "users": [
+    {
+      "name": "Peter",
+      "age": 45,
+      "id": 1
+    },
+    {
+      "name": "AKshay",
+      "age": 23,
+      "id": 2
+    },
+    {
+      "name": "nishant",
+      "age": "32",
+      "id": 3
+    },
+    {
+      "name": "nishant",
+      "age": "gupta",
+      "id": 4
+    },
+    {
+      "name": "nishant",
+      "age": "gupta",
+      "id": 5
+    },
+    {
+      "name": "danial",
+      "age": 32,
+      "id": 6
+    },
+    {
+      "name": "nishant",
+      "age": "gupta",
+      "id": 7
+    },
+    {
+      "name": "nishant",
+      "age": "gupta",
+      "id": 8
+    },
+    {
+      "name": "MAx",
+      "age": "Kenny",
+      "id": 9
+    }
+  ]
 }
