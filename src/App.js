@@ -13,7 +13,7 @@ function App() {
       <Header />
       <p>this is the body of our react apps</p>
       <MyForm />
-      <Container/>
+      {/* <Container/> */}
       {/* <Car /> */}
       {/* <Inventory price="100" />
       <Inventory price="120" />

@@ -14,7 +14,6 @@ class Container extends React.Component {
         if(this.state.show) {
             myheader = <Child/>
         };
-
         return (
             <div>
                 {myheader}
@@ -23,7 +22,6 @@ class Container extends React.Component {
         )
     }
 }
-
 class Child extends React.Component {
     componentWillUnmount() {
         alert("This component named header is going to be unmounted")
