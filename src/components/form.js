@@ -1,24 +1,34 @@
-import React,{useState}  from "react";
+import React, { useState } from "react";
 
-   
+
 function MyForm() {
     const [name, setName] = useState("")
+    const [age, setAge] = useState();
 
-    const handleSubmit = (event) => {
-       // event.preventDefault();
-        alert(`The name you entered was : ${name}`)
+    const updateName = e => {
+        console.log(e);
+        setName(e.target.value);
     }
+    const updateAge = e => {
+        console.log(e);
+        setAge(e.target.value);
+    }
+    // const handleSubmit = (event) => {
+    //    // event.preventDefault();
+    //     alert(`The name you entered was : ${name}`)
+    // }
     return (
-        <form onSubmit={handleSubmit}>
-            <lable>Enter your first name:</lable>
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-            <lable>Enter your lastname</lable>
-            <input type="text" />
-            <button type="submit"> Submit</button>
 
-            
+        <form>
+            <input type="text" placeholder="your name" value={name} onChange={updateName} />
+            <input type="text" placeholder="your age" value={age} onChange={updateAge} />
+
+            {/* <button onClick={submit}> Submit</button> */}
+
         </form>
+
     )
+
 }
 
 export default MyForm
