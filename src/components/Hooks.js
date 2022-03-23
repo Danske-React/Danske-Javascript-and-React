@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 // function FavColour() {
 //     const [color, setColor] = useState("Red");
@@ -11,7 +11,7 @@ import React, {useState , useEffect} from "react";
 //             <button onClick={() =>  setColor("Green")}>Green</button>
 //             <button onClick={() =>  setColor("Purple")}>Purple</button>
 //             <button onClick={() =>  setColor("Pink")}>pink</button>
-         
+
 //         </div>
 //     )
 // }
@@ -19,13 +19,19 @@ import React, {useState , useEffect} from "react";
 // export default FavColour
 function Timer() {
     const [count, setCount] = useState(0);
+    const [calculations, setCalculations] = useState(0);
 
     useEffect(() => {
-        setTimeout(() => {
-            setCount((count) => count +1);
-        }, 1000)
+        setCalculations(() => count * 2);
+    }, [count]) // [] will stop the flow of effect after first render 
+    return (
+        <div>
+            <h1>This count has been rendered {count} times </h1>
+            <button onClick={() => setCount((c) => c + 1)}>+</button>
+            <p>calculations : {calculations}</p>
+        </div>
 
-    }) // [] will stop the flow of effect after first render 
-    return <h1>This count has been rendered {count} times </h1>
+
+    )
 }
 export default Timer 
