@@ -15,11 +15,13 @@ import Home from "./components/home";
 import Layout from "./components/layout";
 import About from "./components/about";
 import Component1 from "./components/porpdrilling";
+import MyProvider from "./components/address";
 
 function App() {
   return (
     <div>
       <h1>hello</h1>
+      <MyProvider/>
       <Component1 />
     </div>
     // <BrowserRouter>
