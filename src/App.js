@@ -10,27 +10,40 @@ import Container from "./components/unmountEx";
 import Hoc from "./components/higherOrder";
 import FavColour from "./components/Hooks";
 import Timer from "./components/Hooks";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/home";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <p>this is the body of our react apps</p>
-      <Timer/>
-     
-     
-     
-     
-     
-      {/* <Score score="70"/> */}
-      {/* <Container/> */}
-      {/* <Car /> */}
-      {/* <Inventory price="100" />
-      <Inventory price="120" />
-      <Inventory price="150" /> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path='/home' element={<Home />}></Route>
 
-      {/* <Footer favcol = "blue"/> */}
-    </div> // jsx javascript xml language and it allows us to use html tags inside a js file 
+      </Routes>
+
+
+    </BrowserRouter>
+
+
+
+    // <div>
+    //   <Header />
+    //   <p>this is the body of our react apps</p>
+    //   <Timer/>
+
+
+
+
+
+    //   {/* <Score score="70"/> */}
+    //   {/* <Container/> */}
+    //   {/* <Car /> */}
+    //   {/* <Inventory price="100" />
+    //   <Inventory price="120" />
+    //   <Inventory price="150" /> */}
+
+    //   {/* <Footer favcol = "blue"/> */}
+    // </div> // jsx javascript xml language and it allows us to use html tags inside a js file 
   );
 }
 // App = Hoc(Header); // hoc
