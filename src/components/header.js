@@ -1,4 +1,6 @@
 import React from "react";
+import Hoc from "./higherOrder";
+import Footer from "./footer";
 
 function Header() {
     const roles = {admin: "nishant", developer: "Akshay"}
@@ -8,4 +10,5 @@ function Header() {
         </div>
     )
 }
+Header = Hoc(Footer) // hoc
 export default Header

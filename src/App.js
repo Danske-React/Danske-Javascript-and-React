@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Inventory from "./components/Inventory";
 import Score from "./components/score";
 import Container from "./components/unmountEx";
+import Hoc from "./components/higherOrder";
 
 function App() {
   return (
@@ -25,5 +26,6 @@ function App() {
     </div> // jsx javascript xml language and it allows us to use html tags inside a js file 
   );
 }
+// App = Hoc(Header); // hoc
 
 export default App;
