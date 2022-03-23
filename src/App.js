@@ -12,17 +12,28 @@ import FavColour from "./components/Hooks";
 import Timer from "./components/Hooks";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
+import Layout from "./components/layout";
+import About from "./components/about";
+import Component1 from "./components/porpdrilling";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/home' element={<Home />}></Route>
+    <div>
+      <h1>hello</h1>
+      <Component1 />
+    </div>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Layout/>}></Route>
+    //     <Route path='/home' element={<Home />}></Route>
+    //     <Route path='/about' element={<About/>}></Route>
+    //     <Route path='/inventory' element={<Inventory price= "100"/>}></Route>
+    //     <Route path="/prop" element={<Component1/>}></Route>
+    //   </Routes>
 
-      </Routes>
 
 
-    </BrowserRouter>
+    // </BrowserRouter> 
 
 
 
