@@ -10,5 +10,5 @@ function Header() {
         </div>
     )
 }
-Header = Hoc(Footer) // hoc
+// Header = Hoc(Footer) // hoc
 export default Header

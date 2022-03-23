@@ -14,8 +14,9 @@ export default function Hoc(HocComponent) {
         render() {
             return (
                 <div>
+                     <HocComponent/>
                     <h1>This is the higher order components</h1>
-                    <HocComponent/>
+                   
                 </div>
             )
         }
