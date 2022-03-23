@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
 import Hoc from "./higherOrder";
 import Footer from "./footer";
+
+
 
 function Header() {
     const roles = {admin: "nishant", developer: "Akshay"}
