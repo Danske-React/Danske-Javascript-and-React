@@ -1,5 +1,5 @@
 import React from "react";
-
+// this is a stateful component 
 
 class Car extends React.Component {
     constructor() {

@@ -1,5 +1,5 @@
 import React from "react";
-
+ // this is a stateless comonent 
 
 class Inventory extends React.Component {
     constructor(props) {

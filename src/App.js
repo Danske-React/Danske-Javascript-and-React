@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import MyForm from "./components/form";
 import Header from "./components/header";
 import Inventory from "./components/Inventory";
+import Score from "./components/score";
 import Container from "./components/unmountEx";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <div>
       <Header />
       <p>this is the body of our react apps</p>
-      <MyForm />
+      <Score score="70"/>
+
       {/* <Container/> */}
       {/* <Car /> */}
       {/* <Inventory price="100" />

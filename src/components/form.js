@@ -24,9 +24,9 @@ function MyForm() {
             <input type="text" placeholder="your name" value={name} onChange={updateName} />
             <input type="text" placeholder="your age" value={age} onChange={updateAge} />
 
-            <button  type="button" onClick={submit}> Submit</button>
+            <button type="button" onClick={submit}> Submit</button>
 
-            </div>
+        </div>
 
     )
 

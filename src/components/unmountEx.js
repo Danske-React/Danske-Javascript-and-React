@@ -2,7 +2,7 @@ import React from "react";
 
 class Container extends React.Component {
     constructor(props) {
-        super(props);
+        super(props); // state ful component
         this.state = {show: true}
     }
     delHeader = () => {
@@ -24,7 +24,7 @@ class Container extends React.Component {
 }
 class Child extends React.Component {
     componentWillUnmount() {
-        alert("This component named header is going to be unmounted")
+        alert("This component named header is going to be unmounted") // this is a stateless component
     }
     render() {
         return(
