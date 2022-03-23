@@ -2,11 +2,11 @@ import React, { useState, useContext, createContext } from "react";
 
 function Component1() {
     const ContextCreator = createContext();
-    const [user, setUser] = useState("Nishant Gupta");
+    const names = ["nishant", "Skhasy", "Vijay"]
     return (
-        <ContextCreator.Provider value={user}>
+        <ContextCreator.Provider value={names}>
             <div>
-                <h1>{`hello ${user}!`}</h1>
+                <h1>{`hello ${names}!`}</h1>
             </div>
 
         </ContextCreator.Provider>
